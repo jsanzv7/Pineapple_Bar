@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pineapple Bar</string>
+    <string name="description"><![CDATA[Sports Club with 3 Levels Offering an abundant 4K 70” TVs, Live Music & Outdoor Patio]]></string>
+    <string name="bar_address">777 Main Street Metuchen NJ 08840</string>
+    <string name="addressFieldName">Address:</string>
+    <string name="daysOfTheWeek">Sunday
+    \nMonday
+    \nTuesday
+    \nWednesday
+    \nThursday
+    \nFriday
+    \nSaturday</string>
+    <string name="hours">12:00PM–11:30PM
+        \n11:00PM–11:30PM
+        \n11:00PM–11:30PM
+        \n11:00PM–11:30PM
+        \n11:00PM–11:30PM
+        \n11:00PM–2:00AM
+        \n11:00PM–2:00AM</string>
+</resources>

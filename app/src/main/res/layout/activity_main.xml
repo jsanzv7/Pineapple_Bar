@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/banner_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/pineapple_bar" />
+    <TextView
+        android:id="@+id/barDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:layout_below="@id/banner_logo" />
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:clickable="true"
+        android:stepSize="0.1"
+        android:isIndicator="true"
+        android:layout_below="@id/barDescription"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/addressFieldName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: "
+        android:textSize="14sp"
+        android:layout_below="@id/rating"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/addressFieldName"
+        android:layout_below="@id/rating"
+        android:text="@string/bar_address" />
+    <TextView
+        android:id="@+id/phoneFieldName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: "
+        android:textSize="14sp"
+        android:layout_below="@id/addressFieldName"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_toRightOf="@id/phoneFieldName"
+        android:text="(732) 777-7779" />
+    <TextView
+        android:id="@+id/hoursOfOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours of Operation: "
+        android:textSize="14sp"
+        android:layout_below="@id/phoneFieldName"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daysOfTheWeek"
+        android:textSize="14sp"
+        android:layout_below="@id/hoursOfOperation"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hoursOfOperation"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/days"
+        android:text="@string/hours" />
+</RelativeLayout>
